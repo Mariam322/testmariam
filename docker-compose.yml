@@ -1,0 +1,7 @@
+services:
+  testmariam:
+    image: systeodigital/testmariam:${IMAGE_TAG:-prod}
+    container_name: testmariam
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8006:80"
